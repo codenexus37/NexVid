@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NexVid Privacy Policy — learn how Code Nexeus handles your data in the NexVid Android app, including AI photo processing, advertising, and your rights.">
+  <title>NexVid Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+  <style>
+    :root {
+      --ground:      #FBF8F4;
+      --surface:     #FFFFFF;
+      --surface-alt: #F4EFE8;
+      --ink:         #211A15;
+      --ink-muted:   #6B5F55;
+      --ink-faint:   #94867A;
+      --accent:      #B03A08;
+      --accent-soft: #EADFD2;
+      --rule:        #E4DACD;
+      --rule-strong: #CFC1AF;
+      --flag-bg:     #FDF3E7;
+      --flag-rule:   #E0B77E;
+
+      --measure: 66ch;
+      --step-0: 1rem;
+      --step-1: 1.125rem;
+      --step-2: 1.5rem;
+      --step-3: 2rem;
+      --step-4: 2.75rem;
+    }
+
+    :root:not([data-theme="light"]) {
+      color-scheme: light;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --ground:      #16120E;
+        --surface:     #1E1913;
+        --surface-alt: #262019;
+        --ink:         #F1EBE3;
+        --ink-muted:   #B3A597;
+        --ink-faint:   #8A7C6E;
+        --accent:      #F0894A;
+        --accent-soft: #3A2A1C;
+        --rule:        #2E2720;
+        --rule-strong: #453C32;
+        --flag-bg:     #2A2015;
+        --flag-rule:   #7A5A2E;
+        color-scheme: dark;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --ground:      #16120E;
+      --surface:     #1E1913;
+      --surface-alt: #262019;
+      --ink:         #F1EBE3;
+      --ink-muted:   #B3A597;
+      --ink-faint:   #8A7C6E;
+      --accent:      #F0894A;
+      --accent-soft: #3A2A1C;
+      --rule:        #2E2720;
+      --rule-strong: #453C32;
+      --flag-bg:     #2A2015;
+      --flag-rule:   #7A5A2E;
+      color-scheme: dark;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      background: var(--ground);
+      color: var(--ink);
+      font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: var(--step-0);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: clamp(2rem, 5vw, 4.5rem) clamp(1.15rem, 4vw, 2.5rem) 5rem;
+    }
+
+    /* ── Masthead ─────────────────────────────────────────────── */
+    .masthead {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--rule-strong);
+    }
+
+    .eyebrow {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      font-family: Newsreader, ui-serif, Georgia, serif;
+      font-size: clamp(2.1rem, 6vw, var(--step-4));
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin: 0;
+      text-wrap: balance;
+    }
+
+    .standfirst {
+      font-family: Newsreader, ui-serif, Georgia, serif;
+      font-size: var(--step-1);
+      line-height: 1.55;
+      color: var(--ink-muted);
+      margin: 0;
+      max-width: var(--measure);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2rem;
+      font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.78rem;
+      color: var(--ink-faint);
+    }
+    .meta span b {
+      color: var(--ink-muted);
+      font-weight: 500;
+    }
+
+    /* ── Notice box ─────────────────────────────────────────── */
+    .notice {
+      background: var(--flag-bg);
+      border-left: 3px solid var(--flag-rule);
+      padding: 0.9rem 1.1rem;
+      margin: 1.25rem 0;
+      font-size: 0.9rem;
+      color: var(--ink-muted);
+      max-width: var(--measure);
+    }
+    .notice b { color: var(--ink); font-weight: 600; }
+
+    mark {
+      background: var(--accent-soft);
+      color: var(--ink);
+      padding: 0.05em 0.3em;
+      border-radius: 2px;
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 0.88em;
+    }
+
+    /* ── Sections ─────────────────────────────────────────────── */
+    section {
+      padding-top: 2.75rem;
+      scroll-margin-top: 1rem;
+    }
+
+    h2 {
+      font-family: Newsreader, ui-serif, Georgia, serif;
+      font-size: var(--step-2);
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin: 0 0 0.9rem;
+      text-wrap: balance;
+      display: flex;
+      gap: 0.7rem;
+      align-items: baseline;
+    }
+
+    h2 .num {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--accent);
+      flex: none;
+      padding-top: 0.15rem;
+    }
+
+    h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      margin: 1.75rem 0 0.5rem;
+      color: var(--ink);
+    }
+
+    p, li { max-width: var(--measure); }
+    p { margin: 0 0 0.9rem; }
+
+    ul { margin: 0 0 0.9rem; padding-left: 1.1rem; }
+    li { margin-bottom: 0.4rem; }
+    li::marker { color: var(--ink-faint); }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.18em;
+      text-decoration-thickness: 1px;
+    }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    code {
+      font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.86em;
+      background: var(--surface-alt);
+      padding: 0.1em 0.35em;
+      border-radius: 3px;
+      color: var(--ink);
+    }
+
+    /* ── Processor table ──────────────────────────────────────── */
+    .table-scroll {
+      overflow-x: auto;
+      margin: 1.25rem 0 0.5rem;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      background: var(--surface);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+      min-width: 34rem;
+    }
+
+    thead th {
+      text-align: left;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      padding: 0.7rem 0.9rem;
+      border-bottom: 1px solid var(--rule-strong);
+      white-space: nowrap;
+    }
+
+    tbody td {
+      padding: 0.7rem 0.9rem;
+      border-bottom: 1px solid var(--rule);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    tbody tr:last-child td { border-bottom: none; }
+
+    td.svc {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    td.svc small {
+      display: block;
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 0.72rem;
+      font-weight: 400;
+      color: var(--ink-faint);
+      margin-top: 0.15rem;
+    }
+
+    /* ── Permission ledger ────────────────────────────────────── */
+    .perms {
+      display: grid;
+      gap: 0.6rem;
+      margin: 1.1rem 0;
+      padding: 0;
+      list-style: none;
+    }
+    .perms li {
+      display: grid;
+      grid-template-columns: minmax(0, 15rem) 1fr;
+      gap: 0.3rem 1rem;
+      align-items: baseline;
+      max-width: none;
+      margin: 0;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .perms li:last-child { border-bottom: none; padding-bottom: 0; }
+    .perms code { background: none; padding: 0; color: var(--accent); }
+    .perms span { color: var(--ink-muted); font-size: 0.9rem; }
+
+    @media (max-width: 34rem) {
+      .perms li { grid-template-columns: 1fr; }
+    }
+
+    /* ── Closing ──────────────────────────────────────────────── */
+    .contact {
+      margin-top: 1.25rem;
+      padding: 1.4rem 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      max-width: var(--measure);
+    }
+    .contact p:last-child { margin-bottom: 0; }
+
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      line-height: 1.7;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="eyebrow">Privacy Policy</div>
+    <h1>How NexVid handles your data</h1>
+    <p class="standfirst">NexVid turns a photo you choose into an AI-generated image or video. Doing that means sending your photo to AI services outside our company. This page says exactly which ones, what else we collect, and why.</p>
+    <div class="meta">
+      <span><b>App</b> NexVid</span>
+      <span><b>Package</b> com.codenexeus.nexvid</span>
+      <span><b>Developer</b> Code Nexeus</span>
+      <span><b>Effective</b> 10 September 2026</span>
+    </div>
+  </header>
+
+  <section id="who">
+    <h2><span class="num">01</span> Who we are</h2>
+    <p>NexVid is developed and published by <strong>Code Nexeus</strong>, based in Rajkot, Gujarat, India. In this policy, "we" and "our" mean Code Nexeus, and "the app" means the NexVid Android application distributed on Google Play under the package name <code>com.codenexeus.nexvid</code>.</p>
+    <p>We are the data controller for the information described here. Where we send data to another company to process on our behalf, that company is named in §3.</p>
+  </section>
+
+  <section id="collect">
+    <h2><span class="num">02</span> What we collect</h2>
+
+    <h3>Photos and generated media</h3>
+    <p>When you choose a photo from your gallery or take one with your camera, the app uploads it to third-party AI services so it can be processed into the effect you selected. The result is downloaded back to your device. Photos are only ever uploaded as a direct result of you starting a generation — the app does not scan, browse, or upload your photo library in the background.</p>
+
+    <h3>Device and installation identifiers</h3>
+    <ul>
+      <li><strong>Android ID</strong> and <strong>Advertising ID</strong> — used to identify the installation, attribute it to the campaign it came from, and serve advertising.</li>
+      <li><strong>Install referrer</strong> from Google Play or Samsung Galaxy Store, including any campaign parameters attached to the link you installed from.</li>
+      <li><strong>Whether a SIM card is present</strong>, and the country reported by your SIM or mobile network. We use this to tell real installs apart from automated ones and to decide which content is available in your region. We do not read your phone number, contacts, call log, or messages.</li>
+      <li><strong>IP address</strong>, which is looked up against a geolocation service to determine your country when no SIM country is available.</li>
+      <li><strong>Device model and Android version</strong>, and diagnostic information attached to crash reports.</li>
+    </ul>
+
+    <h3>Usage and purchases</h3>
+    <ul>
+      <li>Analytics events describing which screens you open and which effects you generate.</li>
+      <li>Crash reports, including a stack trace and device state at the moment of the crash.</li>
+      <li>Purchase records for credit packs, processed by Google Play and RevenueCat. <strong>We never see or receive your card details.</strong> Google Play handles payment in full.</li>
+    </ul>
+
+    <h3>Stored only on your device</h3>
+    <p>Your credit balance, your language choice, your generation history, and the images you have recently used are kept in the app's own storage on your phone. Uninstalling the app deletes them. They are not synced to us.</p>
+  </section>
+
+  <section id="processors">
+    <h2><span class="num">03</span> Where your photo goes</h2>
+    <p>This is the disclosure that matters most, so it is set out in full. Depending on the effect you choose, your photo may be sent to one or more of the following services. Each is an independent company with its own privacy policy and its own retention rules, which we do not control.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col">What it receives</th>
+            <th scope="col">Why</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="svc">SeaArt<small>seaart.ai</small></td>
+            <td>Your photo</td>
+            <td>Generating AI images and videos</td>
+          </tr>
+          <tr>
+            <td class="svc">Remaker AI<small>remaker.ai</small></td>
+            <td>Your photo</td>
+            <td>Face-swap video generation</td>
+          </tr>
+          <tr>
+            <td class="svc">FaceSwapper<small>faceswapper.ai</small></td>
+            <td>Your photo</td>
+            <td>Face-swap image generation</td>
+          </tr>
+          <tr>
+            <td class="svc">Segmind<small>segmind.com</small></td>
+            <td>Your photo</td>
+            <td>Face-swap image generation</td>
+          </tr>
+          <tr>
+            <td class="svc">302.AI<small>302.ai</small></td>
+            <td>Your photo</td>
+            <td>AI image processing</td>
+          </tr>
+          <tr>
+            <td class="svc">RapidAPI<small>rapidapi.com</small></td>
+            <td>Your photo</td>
+            <td>Hosts some of the face-swap providers above</td>
+          </tr>
+          <tr>
+            <td class="svc">A1.art<small>a1.art</small></td>
+            <td>Your photo</td>
+            <td>Checking images against our content rules before generating</td>
+          </tr>
+          <tr>
+            <td class="svc">tmpfiles.org<small>tmpfiles.org</small></td>
+            <td>Your photo</td>
+            <td>Temporary hosting, so an AI service can fetch the image by link. Images are publicly accessible by link for the duration of the temporary hosting period.</td>
+          </tr>
+          <tr>
+            <td class="svc">PDF.co<small>pdf.co</small></td>
+            <td>Your photo</td>
+            <td>Alternative temporary file hosting</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notice">
+      <b>Note about temporary file hosting:</b> Services like tmpfiles.org store your image at a link that is not password-protected for as long as that service keeps it. Only upload photos you are comfortable being handled this way.
+    </div>
+
+    <h3>Other companies we share data with</h3>
+    <p>These receive identifiers and usage data, not your photos:</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col">What it receives</th>
+            <th scope="col">Why</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="svc">Google Firebase<small>Analytics, Crashlytics, Firestore</small></td>
+            <td>Usage events, crash reports, device identifier</td>
+            <td>Understanding usage, fixing crashes, storing install attribution</td>
+          </tr>
+          <tr>
+            <td class="svc">Google AdMob<small>admob.google.com</small></td>
+            <td>Advertising ID, device and ad-interaction data</td>
+            <td>Showing advertising</td>
+          </tr>
+          <tr>
+            <td class="svc">Google Play Billing<small>play.google.com</small></td>
+            <td>Purchase records</td>
+            <td>Processing payments</td>
+          </tr>
+          <tr>
+            <td class="svc">RevenueCat<small>revenuecat.com</small></td>
+            <td>Purchase records, an anonymous user ID</td>
+            <td>Managing credit purchases and entitlements</td>
+          </tr>
+          <tr>
+            <td class="svc">Meta<small>Facebook SDK</small></td>
+            <td>Advertising ID, install and app events</td>
+            <td>Measuring which ad campaign an install came from</td>
+          </tr>
+          <tr>
+            <td class="svc">Branch<small>branch.io</small></td>
+            <td>Install referrer and link data</td>
+            <td>Deep links and install attribution</td>
+          </tr>
+          <tr>
+            <td class="svc">ByteBrew<small>bytebrew.io</small></td>
+            <td>Usage and install events</td>
+            <td>Analytics</td>
+          </tr>
+          <tr>
+            <td class="svc">Phonexa Technologies<small>phonexatechnologiesllc.com</small></td>
+            <td>Install attribution data, generation status</td>
+            <td>Our own campaign reporting and generation queue</td>
+          </tr>
+          <tr>
+            <td class="svc">ipapi<small>ipapi.co</small></td>
+            <td>IP address</td>
+            <td>Determining your country</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>We do not sell your personal information, and we do not share your photos with anyone except the processors listed above for the purpose of producing the result you asked for.</p>
+  </section>
+
+  <section id="permissions">
+    <h2><span class="num">04</span> Permissions the app asks for</h2>
+    <p>NexVid requests <strong>no dangerous runtime permissions</strong>. It uses only normal permissions and Android APIs that do not require a user-facing permission dialog.</p>
+    <ul class="perms">
+      <li><code>INTERNET</code><span>Uploading your photo for processing and downloading the result.</span></li>
+      <li><code>ACCESS_NETWORK_STATE</code><span>Checking you are online before starting a generation.</span></li>
+      <li><code>CAMERA</code><span>Letting you take a photo directly within the app to use as input for a generation. The camera is only activated when you tap the in-app camera button — we do not access it in the background.</span></li>
+      <li><code>WRITE_EXTERNAL_STORAGE</code><span>Saving a finished image or video to your gallery — only on Android 9 and older, which had no other way to do it.</span></li>
+    </ul>
+    <h3>What we deliberately do not request</h3>
+    <p>Choosing a photo from your existing gallery uses Android's own system photo picker, which hands the app the single image you selected and nothing else — so the app has <strong>no access to your full photo library</strong>. The camera permission is used solely to let you capture a photo within the app as an alternative to picking one from your gallery. We do not record video, access the camera in the background, or retain any image that you do not explicitly submit for processing.</p>
+  </section>
+
+  <section id="ads">
+    <h2><span class="num">05</span> Advertising</h2>
+    <p>The app shows advertising supplied by <strong>Google AdMob</strong>, which uses your Advertising ID to select and personalise ads. You can reset that identifier or opt out of personalised advertising at any time in <strong>Settings → Google → Ads</strong> on your device. Buying any credit pack removes advertising from the app.</p>
+    <p>Where the law requires a consent prompt for personalised advertising — including in the European Economic Area (EEA) and United Kingdom — the app uses <strong>Google's User Messaging Platform (UMP)</strong> to ask for your consent before ads are personalised. You can review or withdraw that consent at any time from the app's settings screen.</p>
+    <p>Even if you decline personalised ads, you will still see non-personalised advertising. AdMob may still collect certain technical information (such as device type and general location) to show ads that are relevant to your context, regardless of personalisation settings.</p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">06</span> How long data is kept</h2>
+    <ul>
+      <li><strong>Photos you upload</strong> — held by each AI service for as long as that service's own policy allows. We do not keep a copy on our own servers.</li>
+      <li><strong>Generated results</strong> — stored on your device, and deleted when you delete them or uninstall the app.</li>
+      <li><strong>Install attribution records</strong> — kept while the app remains installed, and removed on request.</li>
+      <li><strong>Analytics and crash data</strong> — retained according to Google Firebase's standard retention periods.</li>
+      <li><strong>Purchase records</strong> — kept as long as required for tax and accounting obligations.</li>
+      <li><strong>Ad-related data</strong> — retained by Google AdMob according to Google's own retention and data deletion policies.</li>
+    </ul>
+  </section>
+
+  <section id="rights">
+    <h2><span class="num">07</span> Your choices and your rights</h2>
+    <p>You can delete everything the app holds locally by uninstalling it. To request access to, correction of, or deletion of data associated with your installation, write to us at the address in §11 — include your device's Advertising ID if you can, so we can find the right records.</p>
+    <p>Depending on where you live, you may have rights under the GDPR, the UK GDPR, the CCPA, or India's Digital Personal Data Protection Act, including the right to access, correct, delete, or object to the processing of your data, and to complain to your local data protection authority. We honour these requests regardless of where you live.</p>
+    <p>To opt out of personalised advertising specifically, use the <strong>Settings → Google → Ads</strong> menu on your Android device, or respond to the consent prompt shown by the app if you are in the EEA or UK.</p>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">08</span> Security</h2>
+    <p>Your credit balance is stored encrypted on your device. Traffic to our AI processing partners uses HTTPS. No method of transmission or storage is completely secure, and we cannot guarantee absolute security — please take that into account when choosing which photos to upload.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">09</span> Children</h2>
+    <p>NexVid is not directed to children. We do not knowingly collect personal information from anyone under the age of 13 (or a higher age where required by applicable local law — for example, 16 in certain EU member states, or 18 under India's Digital Personal Data Protection Act). If you believe a child has provided us with personal information, contact us and we will delete it promptly. Because the app uploads photographs of people for AI processing, we recommend it only for adults or with parental supervision.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">10</span> Changes to this policy</h2>
+    <p>We may update this policy as the app changes — particularly if we add or replace an AI processing partner, since §3 must stay accurate. The effective date at the top always reflects the current version. Material changes will be announced in the app before they take effect.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">11</span> Contact us</h2>
+    <div class="contact">
+      <p><strong>Code Nexeus</strong><br>
+      Rajkot, Gujarat, India</p>
+      <p>Privacy enquiries and data requests: <a href="mailto:codenexus37@gmail.com">codenexus37@gmail.com</a></p>
+      <p>We aim to respond to any request within 30 days.</p>
+    </div>
+  </section>
+
+  <footer>
+    NexVid · com.codenexeus.nexvid · Code Nexeus<br>
+    Effective 10 September 2026 · Version 1.0
+  </footer>
+
+</div>
+</body>
+</html>
